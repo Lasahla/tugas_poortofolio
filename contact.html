@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Sahla</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* CSS untuk slideshow background */
+    #beranda {
+      background-image: url('img/bg3.jpeg');
+      background-size: cover;
+      background-position: center;
+      transition: background-image 1s ease-in-out;
+    }
+
+    /* Overlay agar teks tetap terbaca */
+    #beranda .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding-top: 6rem;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    /* Dropdown styling */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 280px;
+      top: 100%;
+      left: 0;
+      z-index: 999;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-weight: normal;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f5f5f5;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full bg-white shadow z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-xl md:text-2xl font-bold text-[#800000]">Sahla.All rights reserved.</h1>
+      <nav>
+        <ul class="flex space-x-6 text-sm md:text-base font-medium">
+          <li><a href="index.html" class="text-gray-700 hover:text-[#800000]">Home</a></li>
+
+          <!-- Dropdown Jurusan -->
+          <li class="dropdown">
+            <a href="#" class="text-gray-700 hover:text-[#800000]">Jurusan</a>
+            <div class="dropdown-content">
+              <a href="akuntansi.html">Akuntansi dan Keuangan Lembaga (AKL)</a>
+              <a href="pemasaran.html">Bisnis Daring dan Pemasaran (BDP)</a>
+              <a href="perkantoran.html">Manajemen Perkantoran & Layanan Bisnis (MPLB)</a>
+              <a href="pplg.html">Pengembangan Perangkat Lunak & Gim (PPLG)</a>
+            </div>
+          </li>
+
+          <li><a href="aboud.html" class="text-gray-700 hover:text-[#800000]">About</a></li>
+          <li><a href="project.html" class="text-gray-700 hover:text-[#800000]">Project</a></li>
+          <li><a href="contact.html" class="text-gray-700 hover:text-[#800000]">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Beranda -->
+  <section id="beranda" class="h-screen text-white pt-20 relative">
+    <div class="overlay text-center px-4">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Halo, Saya Sahla</h2>
+      <p class="text-lg md:text-xl mb-6">Pelajar PPLG di SMKN 9 Semarang</p>
+      <a href="project.html" class="bg-white text-[#800000] font-semibold px-6 py-2 rounded shadow hover:bg-gray-200 transition">Lihat Proyek</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-[#800000] mb-6">Tentang Saya</h2>
+      <p class="text-gray-700 leading-relaxed text-lg">
+        Saya adalah pelajar dari jurusan Pengembangan Perangkat Lunak dan Gim (PPLG) di SMKN 9 Semarang.
+        Saya menyukai desain UI/UX, membuat website, dan suka belajar hal-hal baru terutama di bidang teknologi dan kreativitas digital.
+      </p>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-[#800000] mb-8">Kontak Saya</h2>
+
+      <form class="space-y-4">
+        <input type="text" placeholder="Nama" class="w-full p-3 border border-gray-300 rounded" required>
+        <input type="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded" required>
+        <textarea placeholder="Pesan" class="w-full p-3 border border-gray-300 rounded h-32" required></textarea>
+        <button class="bg-[#800000] text-white px-6 py-3 rounded hover:bg-red-800 transition">Kirim Pesan</button>
+      </form>
+
+      <div class="mt-10 text-center space-y-2">
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/6281234567890" class="text-[#800000] hover:underline">0812-3456-7890</a></p>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/shlaa.nr?igsh=MTcwODAwaGQ1ZXk4Zw==" class="text-[#800000] hover:underline">@nama_ig</a></p>
+        <p><strong>Alamat:</strong> Jl. Pandan Sari X No.7, Sambirejo, Kec. Gayamsari, Kota Semarang, Jawa Tengah 50166</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#800000] text-white text-center py-4">
+    <p>© 2025 by NABILA SAHLA RAMADHANI</p>
+  </footer>
+
+  <!-- JS Background Slideshow -->
+  <script>
+    const images = ['bg1.jpeg', 'bg2.jpeg', 'bg3.jpeg'];
+    let index = 0;
+    const section = document.getElementById('beranda');
+
+    setInterval(() => {
+      index = (index + 1) % images.length;
+      section.style.backgroundImage = `url('${images[index]}')`;
+    }, 5000);
+  </script>
+
+</body>
+</html>

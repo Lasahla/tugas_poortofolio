@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Skills & Experience</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                  url('sekolah.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+    .skill-box {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      transition: 0.3s;
+      height: 100%;
+      color: #222;
+    }
+    .skill-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    }
+    .skill-icon {
+      height: 60px;
+      margin-bottom: 15px;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-align: center;
+      color: #80002a;
+    }
+    /* Tambahan styling background transparan tiap section */
+    section {
+      background: rgba(255,255,255,0.85);
+      border-radius: 15px;
+      padding: 40px;
+      margin-bottom: 40px;
+      color: #222;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    }
+    /* Navbar */
+    .navbar {
+      background-color: #702020;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar .logo {
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links li {
+      margin-left: 20px;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+    .nav-links a.active {
+      color: #ffd700;
+      font-weight: bold;
+    }
+    /* Dropdown menu styling */
+.nav-links .dropdown {
+  position: relative;
+}
+
+.nav-links .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 280px;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.nav-links .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: normal;
+}
+
+.nav-links .dropdown-content a:hover {
+  background-color: #f5f5f5;
+}
+
+.nav-links .dropdown:hover .dropdown-content {
+  display: block;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+  <div class="logo"><strong>Sahla.All rights reserved.</strong></div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+
+    <!-- Dropdown Jurusan -->
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Jurusan</a>
+      <div class="dropdown-content">
+        <a href="akl.html">Akuntansi dan Keuangan Lembaga (AKL)</a>
+        <a href="pemasaran.html">Bisnis Daring dan Pemasaran (BDP)</a>
+        <a href="mplb.html">Manajemen Perkantoran & Layanan Bisnis (MPLB)</a>
+        <a href="pplg.html">Pengembangan Perangkat Lunak & Gim (PPLG)</a>
+      </div>
+    </li>
+
+    <li><a href="aboud.html">About</a></li>
+    <li><a href="project.html">Project</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+
+  <!-- Home Section -->
+  <section id="home" class="py-5 mt-5">
+    <div class="container text-center">
+      <h1 class="fw-bold">Welcome to My Portfolio</h1>
+      <p class="lead">Saya seorang pelajar yang tertarik dengan coding, desain, dan teamwork.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="text-center">
+        Saya memiliki minat dalam teknologi, desain, dan komunikasi. 
+        Tujuan saya adalah terus belajar dan mengembangkan skill untuk masa depan.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="section-title">My Skills & Experience</h2>
+      <div class="row g-4">
+        <!-- Skill 1 -->
+        <div class="col-md-4">
+          <div class="skill-box text-center">
+            <img src="webcookies.png" alt="Web Cookies" class="skill-icon">
+            <h5>Web Cokies</h5>
+            <p>Membuat tampilan toko online sederhana dengan desain modern dan fitur pemesanan dasar.</p>
+          </div>
+        </div>
+        <!-- Skill 2 -->
+        <div class="col-md-4">
+          <div class="skill-box text-center">
+            <img src="dr Alini.jpeg" alt="Design" class="skill-icon">
+            <h5>Web dr Alini</h5>
+            <p>Mendesain halaman profil profesional dokter dengan pendekatan mobile-first dan estetika klinis.</p>
+          </div>
+        </div>
+        <!-- Skill 3 -->
+        <div class="col-md-4">
+          <div class="skill-box text-center">
+            <img src="udinus.png" alt="Editing" class="skill-icon">
+            <h5>Web Udinus</h5>
+            <p>Menyusun website multimedia bertema kampus dengan integrasi video dan tampilan interaktif.</p>
+          </div>
+        </div>
+        <!-- Skill 4 -->
+        <div class="col-md-4">
+          <div class="skill-box text-center">
+            <img src="apotikskanilan.jpeg" alt="Teamwork" class="skill-icon">
+            <h5>Apotik SMKN 9</h5>
+            <p>Proyek kolaboratif untuk simulasi sistem informasi apotek berbasis web.</p>
+          </div>
+        </div>
+        <!-- Skill 5 -->
+        <div class="col-md-4">
+          <div class="skill-box text-center">
+            <img src="loginskanilan.jpeg" alt="Public Speaking" class="skill-icon">
+            <h5>Login SMKN 9</h5>
+            <p>Sistem login sederhana untuk pengelolaan data siswa berbasis PHP dan MySQL.</p>
+          </div>
+        </div>
+        <!-- Skill 6 -->
+        <div class="col-md-4">
+          <div class="skill-box text-center">
+            <img src="loginudinus.jpeg" alt="Spreadsheet" class="skill-icon">
+            <h5>Login UDINUS</h5>
+            <p>Form login berbasis spreadsheet yang mempermudah akses data kampus secara real-time.</p>
+          </div>
+        </div>
+        <!-- Skill 7 -->
+        <div class="col-md-4">
+          <div class="skill-box text-center">
+            <img src="ijinkbm.jpeg" alt="Public Speaking" class="skill-icon">
+            <h5>Ijin KBM</h5>
+            <p>Formulir digital pengajuan izin kegiatan belajar yang praktis dan responsif.</p>
+          </div>
+        </div>
+        <!-- Skill 8 -->
+        <div class="col-md-4">
+          <div class="skill-box text-center">
+            <img src="webkampung.png" alt="Public Speaking" class="skill-icon">
+            <h5>Web Kampung</h5>
+            <p>Halaman web informasi RT dengan desain pastel dan struktur konten yang ringan.</p>
+          </div>
+        </div>
+        <!-- Skill 9 -->
+        <div class="col-md-4">
+          <div class="skill-box text-center">
+            <img src="webkampung.png" alt="Public Speaking" class="skill-icon">
+            <h5>Web Kampung</h5>
+            <p>Halaman web informasi RT dengan desain pastel dan struktur konten yang ringan.</p>
+          </div>
+        </div>
+        <!-- Skill 10 -->
+        <div class="col-md-4">
+          <div class="skill-box text-center">
+            <img src="apotik nine.jpeg" alt="Public Speaking" class="skill-icon">
+            <h5>Web Login Apotik</h5>
+            <p>Proyek web keluarga interaktif sebagai tempat dokumentasi dan pengelolaan data bersama.</p>
+          </div>
+        </div>
+        <!-- Skill 11 -->
+        <div class="col-md-4">
+          <div class="skill-box text-center">
+            <img src="WEBSITEE.png" alt="Public Speaking" class="skill-icon">
+            <h5>Web Semarangan</h5>
+            <p>Halaman web  ini menginformasikan Kuliner,Wisata </p>
+          </div>
+        </div>
+        <!-- Skill 12 -->
+        <div class="col-md-4">
+          <div class="skill-box text-center">
+            <img src="webkampung.png" alt="Public Speaking" class="skill-icon">
+            <h5>Web UNY</h5>
+            <p>Halaman web informasi pendaftaran UNY</p>
+          </div>
+        </div>
+        <!-- Skill 13 -->
+        <div class="col-md-4">
+          <div class="skill-box text-center">
+            <img src="KBM.jpeg" alt="Public Speaking" class="skill-icon">
+            <h5>Web KBM</h5>
+            <p>Halaman web informasi KBM di SMKN 9</p>
+          </div>
+        </div>
+        <!-- Skill 14 -->
+        <div class="col-md-4">
+          <div class="skill-box text-center">
+            <img src="tugasdraw.drawio.png" alt="Public Speaking" class="skill-icon">
+            <h5>DRAWIO</h5>
+            <p>Halaman DRAWIO</p>
+          </div>
+        </div>
+        <!-- Skill 14 -->
+        <div class="col-md-4">
+          <div class="skill-box text-center">
+            <img src="cookiesdesain.png" alt="Public Speaking" class="skill-icon">
+            <h5>D esain Canva</h5>
+            <p>Halaman Canva</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title">Contact Me</h2>
+      <p>Silakan hubungi saya melalui email: <b>email@example.com</b></p>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

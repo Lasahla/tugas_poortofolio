@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - Nabila Sahla</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+    }
+
+    .hero {
+      background-image: url('latarskanilan.jpg'); /* Ganti dengan foto kamu */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      position: relative;
+      color: white;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* gelapkan latar agar teks jelas */
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 600;
+    }
+
+    .hero p {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.7);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 3;
+    }
+
+    nav .logo {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 300;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        display: none;
+        padding: 10px;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+        cursor: pointer;
+        color: white;
+      }
+    }
+
+    .menu-toggle {
+      display: none;
+    }
+    /* Dropdown menu styling */
+.nav-links .dropdown {
+  position: relative;
+}
+
+.nav-links .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 280px;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.nav-links .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: normal;
+}
+
+.nav-links .dropdown-content a:hover {
+  background-color: #f5f5f5;
+}
+
+.nav-links .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+  <div class="logo"><strong>Sahla.All rights reserved.</strong></div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+
+    <!-- Dropdown Jurusan -->
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Jurusan</a>
+      <div class="dropdown-content">
+        <a href="akl.html">Akuntansi dan Keuangan Lembaga (AKL)</a>
+        <a href="pemasaran.html">Bisnis Daring dan Pemasaran (BDP)</a>
+        <a href="mplb.html">Manajemen Perkantoran & Layanan Bisnis (MPLB)</a>
+        <a href="pplg.html">Pengembangan Perangkat Lunak & Gim (PPLG)</a>
+      </div>
+    </li>
+
+    <li><a href="aboud.html">About</a></li>
+    <li><a href="project.html">Project</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>WELCOME TO PORTFOLIO</h1>
+      <p>
+        Halo, perkenalkan nama saya <strong>Nabila Sahla Ramadhani</strong>. Saya adalah seorang siswa SMK jurusan RPL.<br>
+        Portofolio ini saya susun sebagai media untuk memperkenalkan diri, menampilkan karya, pengalaman, dan pencapaian yang telah saya raih.<br>
+        Terima kasih telah meluangkan waktu untuk membaca portofolio ini.
+      </p>
+    </div>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-menu').classList.toggle('show');
+    }
+  </script>
+
+<!-- SECTION: SMKN 9 SEMARANG -->
+<section style="padding: 60px 30px; background-color: #fff;">
+  <div style="max-width: 1200px; margin: auto;">
+    <h2 style="font-size: 32px; color: #571c1c; margin-bottom: 10px; text-align: center;">SAHLA</h2>
+    <h3 style="font-size: 24px; color: #861212; margin-bottom: 30px; text-align: center;">SMK NEGERI 9 SEMARANG</h3>
+    <p style="text-align: center; color: #6b7280; margin-bottom: 40px; font-style: italic;">HE TERRORIZANDA HAS - TEZMARANG</p>
+    
+    <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
+      
+      <!-- Gambar sekolah & Video profil -->
+      <div style="flex: 1; min-width: 320px; text-align: center;">
+        <!-- Gambar -->
+        <img src="sekolah.jpg" 
+             alt="SMKN 9 Semarang" 
+             style="width: 100%; max-width: 450px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom:20px;">
+        
+        <!-- Video Profil -->
+        <iframe width="100%" height="250" 
+          src="https://www.youtube.com/embed/VIDEO_ID" 
+          title="Profil SMKN 9 Semarang" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen
+          style="border-radius:12px; max-width:450px;">
+        </iframe>
+      </div>
+
+      <!-- Deskripsi -->
+      <div style="flex: 1; min-width: 320px;">
+        <p style="font-size: 18px; line-height: 1.6; margin-bottom: 25px;">
+          Jurusan Pengembangan Perangkat Lunak dan Gim (PPLG) di SMK Negeri 9 Semarang merupakan salah satu kompetensi keahlian yang berfokus pada dunia teknologi informasi. Peserta didik dibekali keterampilan dalam pemrograman, pembuatan aplikasi, pengembangan web, desain UI/UX, serta teknologi digital lainnya.
+        </p>
+        
+        <hr style="border: none; border-top: 2px solid #e5e7eb; margin: 30px 0;">
+        
+        <h4 style="font-size: 20px; color: #571c1c; margin-bottom: 20px;">Jurusan di SMK N 9 SEMARANG</h4>
+        
+        <ul style="list-style: none; padding: 0; margin-bottom: 25px;">
+          <li style="margin-bottom: 12px;"><b>• PM - PEMASARAN</b></li>
+          <li style="margin-bottom: 12px;"><b>• AKL - AKUNTANSI</b></li>
+          <li style="margin-bottom: 12px;"><b>• MPLB - PERKANTORAN</b></li>
+          <li style="margin-bottom: 12px;"><b>• PPLG - REKAYASA PERANGKAT LUNAK DAN GIM</b></li>
+        </ul>
+        
+        <p style="font-size: 16px; line-height: 1.6;">
+          "Setiap kesulitan adalah kesempatan untuk belajar lebih baik dan percaya pada proses, karena hasil tak akan mengkhianati kerja keras."
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTION: GURU JURUSAN PPLG -->
+<section style="padding: 60px 30px; background-color: #f9f9f9;">
+  <div style="max-width: 1200px; margin: auto;">
+    <h2 style="text-align: center; font-size: 32px; color: #571c1c; margin-bottom: 40px;">GURU JURUSAN RPL</h2>
+    
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+      
+      <!-- Pak Rana -->
+      <div style="flex: 1; min-width: 300px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+        <div style="height: 200px; overflow: hidden;">
+          <img src="https://via.placeholder.com/400x200?text=Pak+Rana" alt="Pak Rana" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="padding: 20px;">
+          <h3 style="color: #861212; margin-bottom: 10px;">Pak Rana</h3>
+          <p style="line-height: 1.6;">Mengajar mata pelajaran AppScript. Membimbing siswa dalam memahami dan mengembangkan aplikasi menggunakan Google AppScript untuk otomatisasi dan integrasi berbagai layanan Google.</p>
+        </div>
+      </div>
+      
+      <!-- Pak Septian -->
+      <div style="flex: 1; min-width: 300px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+        <div style="height: 200px; overflow: hidden;">
+          <img src="https://via.placeholder.com/400x200?text=Pak+Septian" alt="Pak Septian" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="padding: 20px;">
+          <h3 style="color: #861212; margin-bottom: 10px;">Pak Septian</h3>
+          <p style="line-height: 1.6;">Mengajar pemrograman PHP. Membimbing siswa dalam memahami konsep pemrograman server-side, pembuatan website dinamis, dan pengembangan aplikasi web menggunakan PHP dan database.</p>
+        </div>
+      </div>
+      
+      <!-- Pak Komar -->
+      <div style="flex: 1; min-width: 300px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+        <div style="height: 200px; overflow: hidden;">
+          <img src="https://via.placeholder.com/400x200?text=Pak+Komar" alt="Pak Komar" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="padding: 20px;">
+          <h3 style="color: #861212; margin-bottom: 10px;">Pak Komar</h3>
+          <p style="line-height: 1.6;">Mengajar desain grafis dan UI/UX. Membimbing siswa dalam membuat desain yang menarik dan fungsional, termasuk prinsip-prinsip desain, penggunaan tools desain, dan pembuatan antarmuka pengguna.</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Google Maps Embed -->
+<div style="margin-top: 50px; text-align: center; padding: 0 20px 60px;">
+  <h3 style="font-size: 24px; color: #571c1c; margin-bottom: 20px;">🗺️ Lokasi Sekolah</h3>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.582088782182!2d110.43643707496413!3d-7.062396669026894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708c7b8a1c07db%3A0x4c2c8db6db0f1a8c!2sSMK%20Negeri%209%20Semarang!5e0!3m2!1sid!2sid!4v1694444444444!5m2!1sid!2sid" 
+    width="100%" 
+    height="300" 
+    style="border:0; border-radius:10px; max-width: 800px;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+</body>
+</html>
